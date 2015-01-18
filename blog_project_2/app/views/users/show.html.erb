@@ -1,0 +1,14 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+Welcome, <%= current_user.first_name %>!
+
+<ul>
+<% @current_user.articles.each do |article| %>
+
+  <li><h3><%= article.title %></h3></li>
+  <%= button_to "Show Article", article_path(article), method: :get %>
+
+  <% end %>
+
+</ul> 
