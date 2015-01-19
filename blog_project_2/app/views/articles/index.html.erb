@@ -2,7 +2,6 @@
 
   <div class="article_container">
     <h1 class="title"><%= article.title %></h1> <br>
-    <img class="andy_pohl" src="https://plus.google.com/u/0/_/focus/photos/private/AIbEiAIAAABECM-K5_zd2OXv7gEiC3ZjYXJkX3Bob3RvKig1ZDMzMjhkZWNiMGQxZDNhYmYzZDQ5OTBiMDkyNWUzODRkNWM2YTE1MAGYUy_TMaixt1Kgk7Tx2SJ0CcQ63A?sz=96">
     <h3 class="content"><%= article.content %></h3>
     <%= button_to "Delete", article, method: :delete %>
     <%= button_to "Show Article", article_path(article), method: :get %>

@@ -9,7 +9,9 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   validates_confirmation_of :password
-  validates_presence_of :password_digest 
+  validates_presence_of :password_digest
+  validates_format_of :email, with: /.+@.+/
+  validates_format_of :password, with: /.*(([A-Z].*[a-z])|([a-z].*[A-Z])).*/ 
 
   def authenticate(unencrypted_password)
     if BCrypt::Password.new(password_digest) == unencrypted_password
