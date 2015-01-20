@@ -16462,3 +16462,931 @@ Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 16:25:36 -0800
+
+
+Started POST "/sessions" for ::1 at 2015-01-19 17:18:51 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cueIIqwi84dgdGAfuLlzpRD82ft2inklvToU5/duzEZdHQ366rt264/N6iTVrDk20LLprCuzopQFeI2bt+kusg==", "user"=>{"email"=>"andy@andy.com", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "andy@andy.com"]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 288ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/users/1" for ::1 at 2015-01-19 17:18:51 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 21ms
+
+SyntaxError (/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+      params: { apikey: ENV["apikey"],
+            ^
+/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:18: syntax error, unexpected ',', expecting keyword_end
+/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:20: syntax error, unexpected ')', expecting keyword_end):
+  app/models/article.rb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/models/article.rb:18: syntax error, unexpected ',', expecting keyword_end
+  app/models/article.rb:20: syntax error, unexpected ')', expecting keyword_end
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb___3371820236861215688_70224773096700'
+
+
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (14.7ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (83.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-01-19 17:30:01 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 19ms
+
+SyntaxError (/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+      params: { apikey: @@apikey,
+            ^
+/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:20: syntax error, unexpected ',', expecting keyword_end
+/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:22: syntax error, unexpected ')', expecting keyword_end):
+  app/models/article.rb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/models/article.rb:20: syntax error, unexpected ',', expecting keyword_end
+  app/models/article.rb:22: syntax error, unexpected ')', expecting keyword_end
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb___3371820236861215688_70224773096700'
+
+
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (72.4ms)
+
+
+Started GET "/users/1" for ::1 at 2015-01-19 17:32:09 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 10ms
+
+SyntaxError (/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+      params: { apikey: @@apikey,
+            ^
+/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:20: syntax error, unexpected ',', expecting keyword_end
+/Users/andrewpohl/rails_mini_lab/blog_project_2/app/models/article.rb:22: syntax error, unexpected ')', expecting keyword_end):
+  app/models/article.rb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/models/article.rb:20: syntax error, unexpected ',', expecting keyword_end
+  app/models/article.rb:22: syntax error, unexpected ')', expecting keyword_end
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb___3371820236861215688_70224773096700'
+
+
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/andrewpohl/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (72.7ms)
+
+
+Started GET "/users/1" for ::1 at 2015-01-19 17:32:44 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (1.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 138ms (Views: 123.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:32:44 -0800
+
+
+Started GET "/articles" for ::1 at 2015-01-19 17:32:48 -0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"authenticity_token"=>"E9K+Cs4SVB0E6n2bJvlSeZVWZUbl6W3tNAf25GxRGgw8KDvSiIvRcetT96BL7BjqVRhVEbjQtlyMRW+YLNb4+A=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered articles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 74ms (Views: 71.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:32:49 -0800
+
+
+Started GET "/articles/4" for ::1 at 2015-01-19 17:33:00 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 4]]
+ETHON: Libcurl initialized
+ETHON: performed EASY effective_url=http://access.alchemyapi.com/calls/text/TextGetRankedKeywords?apikey=fa2f5defffeb15bc53e8cc1d2f5e751e0e9c8c99&text=This%20is%20the%20content%20of%20Article%20Number%202.%20%20It%27s%20fantastic%20fun%2C%20and%20everyone%20should%20try%20it&maxRetrieve=10&keywordExtractMode=normal&outputMode=json response_code=200 return_code=ok total_time=0.387616
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 468ms (Views: 76.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:33:00 -0800
+
+
+Started DELETE "/logout" for ::1 at 2015-01-19 17:33:05 -0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1CNbFB3JlAhmGkDwBWsq8s+4mNmQemskkigvqcj8/jb72d7MW1ARZImjystofmBhD/aojs1DsJUqarbViHscwg=="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-01-19 17:33:05 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 78ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:33:05 -0800
+
+
+Started POST "/sessions" for ::1 at 2015-01-19 17:33:31 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9LcW/Yuw0RKIg2Ue50b9vRx1BC2xa2/yC/jLstpAlprbTZMlzSlUfmc67yWKU7cu3Ds0euxStEOzulLOmsd0bg==", "user"=>{"email"=>"theodora@beattymraz.us", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "theodora@beattymraz.us"]]
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 265ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/9" for ::1 at 2015-01-19 17:33:31 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mArticle Load (0.8ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1  [["user_id", 9]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:31 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:31 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:31 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:33:31 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:31 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:33:32 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:33:32 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:33:32 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:32 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:32 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:32 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:32 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:33:32 -0800
+
+
+Started GET "/articles/48" for ::1 at 2015-01-19 17:33:34 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 48]]
+ETHON: performed EASY effective_url=http://access.alchemyapi.com/calls/text/TextGetRankedKeywords?apikey=fa2f5defffeb15bc53e8cc1d2f5e751e0e9c8c99&text=Farm-to-table%20viral%20VHS%20cred%20Carles%20locavore%20trust%20fund%20food%20truck.%20Photo%20booth%20Banksy%20tumblr%20vice%20yr.%20Vinyl%20single-origin%20coffee%20Williamsburg%20fixie%20retro%20craft%20beer%20mlkshk%20organic%20moon.%20Seitan%20organic%20lo-fi%20VHS%20messenger%20bag%20Williamsburg%20raw%20denim%20blog.%20Wayfarers%20dreamcatcher%20mlkshk%20sartorial%20helvetica.%0ABlog%20put%20a%20bird%20on%20it%20you%20probably%20haven%27t%20heard%20of%20them%20vegan%20party%20biodiesel.%20Cred%20synth%20organic%20retro%20etsy%20American%20Apparel%20quinoa.%20Letterpress%20vinyl%20chambray%20blog%20bicycle%20rights%20aesthetic%20farm-to-table%20vegan%20artisan.%20Quinoa%20mustache%20Banksy%20yr%20synth%20skateboard%20American%20Apparel%20scenester%20viral.&maxRetrieve=10&keywordExtractMode=normal&outputMode=json response_code=200 return_code=ok total_time=0.296408
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 362ms (Views: 62.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:33:35 -0800
+
+
+Started GET "/articles/48" for ::1 at 2015-01-19 17:34:32 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 48]]
+ETHON: performed EASY effective_url=http://access.alchemyapi.com/calls/text/TextGetRankedKeywords?apikey=fa2f5defffeb15bc53e8cc1d2f5e751e0e9c8c99&text=Farm-to-table%20viral%20VHS%20cred%20Carles%20locavore%20trust%20fund%20food%20truck.%20Photo%20booth%20Banksy%20tumblr%20vice%20yr.%20Vinyl%20single-origin%20coffee%20Williamsburg%20fixie%20retro%20craft%20beer%20mlkshk%20organic%20moon.%20Seitan%20organic%20lo-fi%20VHS%20messenger%20bag%20Williamsburg%20raw%20denim%20blog.%20Wayfarers%20dreamcatcher%20mlkshk%20sartorial%20helvetica.%0ABlog%20put%20a%20bird%20on%20it%20you%20probably%20haven%27t%20heard%20of%20them%20vegan%20party%20biodiesel.%20Cred%20synth%20organic%20retro%20etsy%20American%20Apparel%20quinoa.%20Letterpress%20vinyl%20chambray%20blog%20bicycle%20rights%20aesthetic%20farm-to-table%20vegan%20artisan.%20Quinoa%20mustache%20Banksy%20yr%20synth%20skateboard%20American%20Apparel%20scenester%20viral.&maxRetrieve=10&keywordExtractMode=normal&outputMode=json response_code=200 return_code=ok total_time=0.548891
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 614ms (Views: 62.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:34:33 -0800
+
+
+Started GET "/articles" for ::1 at 2015-01-19 17:35:55 -0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"authenticity_token"=>"HawSEo5xZ1Lrq6QxMqyB14ha9kVY0v0cxus+XqoJGqgyVpfKyOjiPgQSLgpfuctESBTGEgXrJq1+qaci6o74XA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mArticle Load (0.8ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1  [["user_id", 9]]
+  Rendered articles/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:35:55 -0800
+
+
+Started GET "/articles/57" for ::1 at 2015-01-19 17:35:59 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"57"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 57]]
+ETHON: performed EASY effective_url=http://access.alchemyapi.com/calls/text/TextGetRankedKeywords?apikey=fa2f5defffeb15bc53e8cc1d2f5e751e0e9c8c99&text=You%20probably%20haven%27t%20heard%20of%20them%20dreamcatcher%20master%20cleanse%20artisan%20stumptown%20squid%20yr.%20Put%20a%20bird%20on%20it%20keytar%20Cosby%20Sweater%20tumblr%20skateboard%20dreamcatcher%20mixtape%20you%20probably%20haven%27t%20heard%20of%20them.%20Marfa%20quinoa%20lomo%20dreamcatcher%20ethical.%0AHelvetica%20Rerry%20Richardson%20Cosby%20Sweater%20blog%20Shoreditch%20food%20truck%20vinyl%20jean%20shorts%20DIY.%20Cardigan%20art%20salvia%20farm-to-table%20Pitchfork%20McSweeney%27s%20echo%20park%20VHS%20retro.%20Wolf%20keytar%20photo%20booth%20dreamcatcher%20cardigan%20Banksy.%20Readymade%20thundercats%20sartorial%20you%20probably%20haven%27t%20heard%20of%20them%20craft%20beer%20Four%20Loko%20Carles%20viral%20McSweeney%27s.%20Biodiesel%20sustainable%20McSweeney%27s%20gluten-free%20twee%20sartorial%20thundercats%20tumblr%20art.%0AWilliamsburg%20locavore%20messenger%20bag%20master%20cleanse%20fanny%20pack%20Portland.%20Rerry%20richardson%20readymade%20helvetica%20leggings%20organic%20chambray.%20Sartorial%20twee%20jean%20shorts%20you%20probably%20haven%27t%20heard%20of%20them%208-bit%20freegan%20leggings%20art%20whatever.%0ARetro%20next%20level%20lo-fi%20Brooklyn%20Shoreditch%20iPhone%20farm-to-table.%20Lo-fi%20ethical%20party%20beard%20stumptown%20fanny%20pack%20mustache%20fap.%20Vice%20butcher%20%2B1%20sartorial%20sustainable%20artisan%20hoodie.%20Shoreditch%20locavore%20you%20probably%20haven%27t%20heard%20of%20them%20lo-fi%20mustache%20hoodie.&maxRetrieve=10&keywordExtractMode=normal&outputMode=json response_code=200 return_code=ok total_time=0.300772
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 372ms (Views: 69.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:35:59 -0800
+
+
+Started GET "/articles" for ::1 at 2015-01-19 17:36:19 -0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"authenticity_token"=>"r+mxlFRVJyxb0TucDV3Hoe1fIiMP7RskwYo5RU8oRvuAEzRMEsyiQLRosadgSI0yLRESdFLUwJV5yKA5D6+kDw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mArticle Load (0.9ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1  [["user_id", 9]]
+  Rendered articles/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:36:19 -0800
+
+
+Started GET "/sites/about" for ::1 at 2015-01-19 17:36:20 -0800
+Processing by SitesController#about as HTML
+  Parameters: {"authenticity_token"=>"L/Vaxf2Lvp2gDhr8VLBJ1hIE/bsgWTUmd7IuhkMG9z0AD98duxI78U+3kMc5pQNF0krN7H1g7pfP8Lf6A4EVyQ=="}
+  Rendered sites/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:36:20 -0800
+
+
+Started GET "/sites/contact" for ::1 at 2015-01-19 17:36:21 -0800
+Processing by SitesController#contact as HTML
+  Parameters: {"authenticity_token"=>"xPE2hk4J6ESZehvx/IrCU9brFgK1pFTkJYCkeLzhECzrC7NeCJBtKHbDkcqRn4jAFqUmVeidj1Wdwj0E/Gby2A=="}
+  Rendered sites/contact.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 9]]
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:36:22 -0800
+
+
+Started GET "/articles/new" for ::1 at 2015-01-19 17:36:22 -0800
+Processing by ArticlesController#new as HTML
+  Parameters: {"authenticity_token"=>"SgmQNEQVaezc36JBK9gCIpQloVbWa2e8stqSgZG10Dhl8xXsAozsgDNmKHpGzUixVGuRAYtSvA0KmAv90TIyzA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  Rendered articles/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:36:23 -0800
+
+
+Started DELETE "/logout" for ::1 at 2015-01-19 17:36:27 -0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UBYj9XfB8pcMa/I7v+8sLBotDUapgJ7HkhB61C0hI7h/7KYtMVh3++PSeADS+ma/2mM9EfS5RXYqUuOobabBTA=="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-01-19 17:36:27 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:27 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:36:28 -0800
+
+
+Started POST "/sessions" for ::1 at 2015-01-19 17:36:40 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4N9JYN9xH9NrHhFS0GDyWc7i4w0gwc8bIbLbUtgqlZ7PJcy4meiav4Snm2m9dbjKDqzTWn34FKqZ8EIumK13ag==", "user"=>{"email"=>"andy@andy.com", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "andy@andy.com"]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 262ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2015-01-19 17:36:40 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 70ms (Views: 67.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:36:40 -0800
+
+
+Started GET "/articles/4" for ::1 at 2015-01-19 17:36:41 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 4]]
+ETHON: performed EASY effective_url=http://access.alchemyapi.com/calls/text/TextGetRankedKeywords?apikey=fa2f5defffeb15bc53e8cc1d2f5e751e0e9c8c99&text=This%20is%20the%20content%20of%20Article%20Number%202.%20%20It%27s%20fantastic%20fun%2C%20and%20everyone%20should%20try%20it&maxRetrieve=10&keywordExtractMode=normal&outputMode=json response_code=200 return_code=ok total_time=0.28715100000000005
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 352ms (Views: 62.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:36:42 -0800
+
+
+Started GET "/articles/1" for ::1 at 2015-01-19 17:36:46 -0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+ETHON: performed EASY effective_url=http://access.alchemyapi.com/calls/text/TextGetRankedKeywords?apikey=fa2f5defffeb15bc53e8cc1d2f5e751e0e9c8c99&text=This%20is%20the%20content%20of%20my%20first%20Article.%20%20I%20enjoy%20it%20so&maxRetrieve=10&keywordExtractMode=normal&outputMode=json response_code=200 return_code=ok total_time=0.20911
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 280ms (Views: 68.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/sessions-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/sites-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/sessions-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:46 -0800
+
+
+Started GET "/assets/sites-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:47 -0800
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-19 17:36:47 -0800
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for ::1 at 2015-01-19 17:36:47 -0800
